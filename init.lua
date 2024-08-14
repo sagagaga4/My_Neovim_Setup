@@ -1,5 +1,5 @@
 -- Initialize lazy.nvim
-require("theprimeagen")
+require("sag")
 vim.opt.rtp:prepend(vim.fn.stdpath("data") .. "/lazy/lazy.nvim")
 
 -- Setup plugins
@@ -8,7 +8,7 @@ require("lazy").setup({
     "nvim-lua/plenary.nvim"
   },
   {
-    "theprimeagen/harpoon",
+    "sag/harpoon",
     config = function()
       local status, harpoon = pcall(require, "harpoon")
       if not status then
@@ -56,5 +56,5 @@ require("lazy").setup({
 -- ~/.config/nvim/init.lua
 
 -- Load custom settings
-require("theprimeagen.set")
+require("sag.set")
 
