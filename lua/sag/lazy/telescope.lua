@@ -13,7 +13,7 @@ return {
       },
     })
 
-    local search_dir = vim.fn.expand("~/Desktop/Programming/NeoVim") -- Expand the path for the user's home directory
+    local search_dir = vim.fn.expand(*ADD YOUR DESIRED FOLDER*) -- Expand the path for the user's home directory
 
     -- Key mappings for Telescope with restricted search directory
     vim.keymap.set('n', '<leader>pf', function()
