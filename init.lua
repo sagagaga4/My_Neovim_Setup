@@ -1,7 +1,6 @@
 -- Initialize lazy.nvim
 require("sag")
 vim.opt.rtp:prepend(vim.fn.stdpath("data") .. "/lazy/lazy.nvim")
-
 -- Setup plugins
 require("lazy").setup({
   {
